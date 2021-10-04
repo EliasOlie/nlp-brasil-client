@@ -49,5 +49,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-github-btn": "^1.2.1"
+  }
 }

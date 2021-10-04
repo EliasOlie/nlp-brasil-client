@@ -13,7 +13,8 @@ const PhraseStyle = styled.div `
 
     background-color: white;
 
-    border-radius: 1rem; 
+    border-radius: 1rem;
+    font-size: 1.3em;
 
     color: #${COLORS.YELLOW};
     font-weight: 600;

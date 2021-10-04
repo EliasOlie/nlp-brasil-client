@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, RouteComponentProps} from 'react-router-dom';
 import routes from './routes/routes';
 import GlobalStyle from './components/styles/Global'
+import NotFoundPage from './components/pages/NotFoundPage'
 
 ReactDOM.render(
   <React.StrictMode>
   <>
     <GlobalStyle/>
     <BrowserRouter>
+      
       <Switch>
         {routes.map(((route, index) => {
           return(
@@ -27,6 +29,7 @@ ReactDOM.render(
             />
           );
         }))}
+      <Route component={NotFoundPage}/>
       </Switch>
     </BrowserRouter>
   </>

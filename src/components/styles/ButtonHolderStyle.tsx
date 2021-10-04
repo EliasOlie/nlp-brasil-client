@@ -2,17 +2,22 @@ import styled from "styled-components";
 import COLORS from "./Colors";
 
 const BtnWrapper = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
 
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
 
     button{
         cursor: pointer;
 
-        margin-right: 1rem;
+        margin-right: 1em;
         width: 15vw;
         height: 5vh;
 
@@ -22,6 +27,8 @@ const BtnWrapper = styled.div`
         box-shadow: 3px;
 
         font-weight: 600;
+        font-size: 1vw;
+
 
         color: #${COLORS.YELLOW};
         background-color: #${COLORS.LIGHTGREEN};
@@ -29,6 +36,8 @@ const BtnWrapper = styled.div`
     
 
     .Detalhes{
+        margin-top: 1em;
+
         display: flex;
         justify-content: center;
         align-items: center;

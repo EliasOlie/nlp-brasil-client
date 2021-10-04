@@ -1,8 +1,12 @@
 import HomePage from "../components/pages/HomePage";
+import ContactPage from "../components/pages/ContactPage";
 import IRoute from "../interfaces/IRoute";
-import Debg from "../components/Debg"
+import AboutPage from "../components/pages/AboutPage";
+
+
 
 const routes: IRoute[] = [
+    
     {
         path: '/',
         name: 'Home page',
@@ -10,10 +14,17 @@ const routes: IRoute[] = [
         exact: true
     },
     {
-        path: '/dbg',
-        name: 'Debug page',
-        component: Debg,
+        path: '/contato',
+        name: 'Contact Page',
+        component: ContactPage,
         exact: true
-    }
+    },
+    {
+        path: '/sobre',
+        name: 'About PAge',
+        component: AboutPage,
+        exact: true
+    },
+    
 ];
 export default routes;

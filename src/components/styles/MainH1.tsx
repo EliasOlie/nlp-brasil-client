@@ -2,10 +2,9 @@ import styled from "styled-components";
 import COLORS from "./Colors";
 
 const H1Style = styled.h1`
-    font-size: 5rem;
     color: #${COLORS.YELLOW};
 
-    margin-top: 9rem;
+    margin-top: 8rem;
 
     display: flex;
     justify-content: center;

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 //Midia
 import ArrowDown from "./media/arrow-down.svg"
+import DropdownStyle from "./styles/DropdownStyle";
 
 function DropdownItem(props:any){
     return(
@@ -58,12 +59,14 @@ function DropDownMenu(props:any){
     
     return(
         <div className="dropdown">
-            <DropDownItem>Polaridade: {props.Polaridade}</DropDownItem>
-            <DropDownItem>Confiança: {props.Confianca}</DropDownItem>
-            <DropDownItem>Numero de palavras: {props.NumeroPalavras}</DropDownItem>
-            <DropDownItem>Palavras conhecidas: {props.PalavrasCon}</DropDownItem>
-            <DropDownItem>Palavras desconhecidas: {props.PalavrasDesc}</DropDownItem>
-            <DropDownItem>Mensagem: {props.Mensagem}</DropDownItem>
+            <DropdownStyle>
+                <DropDownItem>Polaridade: {props.Polaridade}</DropDownItem>
+                <DropDownItem>Confiança: {props.Confianca}</DropDownItem>
+                <DropDownItem>Numero de palavras: {props.NumeroPalavras}</DropDownItem>
+                <DropDownItem>Palavras conhecidas: {props.PalavrasCon}</DropDownItem>
+                <DropDownItem>Palavras desconhecidas: {props.PalavrasDesc}</DropDownItem>
+                <DropDownItem>Mensagem: {props.Mensagem}</DropDownItem>
+            </DropdownStyle>
         </div>
     );
 };
