@@ -1,4 +1,5 @@
 import { useState } from "react";
+import IPhrase from "../interfaces/IPhrase";
 
 //Midia
 import ArrowDown from "./media/arrow-down.svg"
@@ -20,7 +21,7 @@ function DropdownItem(props:any){
             </NavItem>
         </NavBar>
     );
-};
+}
 
 function NavBar(props:any){
     return(
@@ -28,7 +29,7 @@ function NavBar(props:any){
             <div className='navbar-nav'>{ props.children }</div>
         </nav>
     );
-};
+}
 
 function NavItem(props:any){
 
@@ -45,11 +46,15 @@ function NavItem(props:any){
         </>
         
     );
-};
+}
 
-function DropDownMenu(props:any){
+interface IdropdownItem {
+    children: JSX.Element|JSX.Element[]| any[];
+}
+
+function DropDownMenu(props:IPhrase){
     
-    function DropDownItem(props:any){
+    function DropDownItem(props:IdropdownItem){
         return(
             <p className='menu-item'>
                 {props.children}
@@ -69,6 +74,6 @@ function DropDownMenu(props:any){
             </DropdownStyle>
         </div>
     );
-};
+}
 
 export default DropdownItem

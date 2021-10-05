@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import COLORS from "./Colors";
 
-const notFoundPageStyle = styled.div`
+const NotFoundPageStyle = styled.div`
     position: absolute;
     top: 30%;
     left: 37%;
@@ -28,4 +28,4 @@ const notFoundPageStyle = styled.div`
     }
 `;
 
-export default notFoundPageStyle
+export default NotFoundPageStyle

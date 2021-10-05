@@ -1,17 +1,17 @@
 import { useRef, useState } from 'react'
 import { SubmitHandler, FormHandles } from '@unform/core'
 import Input from './input'
-import api from '../config/Axios_Conf'
+import api from '../config/API'
 import IForm from '../interfaces/IFormPhrase'
 import IPhrase from '../interfaces/IPhrase'
 import PhraseFormStyle from './styles/PhraseFormStyle'
-import ButtonHolderStyle from './styles/ButtonHolderStyle'
+import ButtonHolderStyle from './styles/BtnWrapper'
 import PhraseReportStyle from './styles/PhraseReportStyle'
-import ChadButton from './ChadButton'
-import ShowReport from './Reports'
-import Show from './statisticsShow'
-import ShowPhrase from './showPhrase'
+import Button from './Button'
+import ShowReport from './ShowReports'
+import Show from './ShowStatistics'
 import Wrapper from './styles/formWrapper'
+import ShowPhrase from './ShowPhrase'
 
 export default function MyForm() {
 	const [phrase, setPhrase] = useState<IPhrase>()
@@ -34,13 +34,13 @@ export default function MyForm() {
 				<PhraseFormStyle ref={formRef} onSubmit={handleSubmit}>
 					<Input name="phrase" placeholder="Frase"/>
 					<ButtonHolderStyle>
-						<ChadButton type="submit" onClick={() => {
+						<Button type="submit" onClick={() => {
 							if (hidden) {
 								setHidden(hidden)
 							}else{
 								setHidden(!hidden)
 							}
-						}}>Enviar!</ChadButton>
+						}}>Enviar!</Button>
 						<Show isHidden={hidden} phrase={phrase}/>
 						
 					</ButtonHolderStyle>

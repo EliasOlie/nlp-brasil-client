@@ -1,7 +1,7 @@
 import Navbar from "../Navbar";
-import NotFoundPageStyle from "../styles/notFoundStyle";
+import NotFoundPageStyle from "../styles/NotFoundPageStyle";
 
-const NotFound:React.FC = () => {
+const NotFoundPage:React.FC = () => {
     return(
         <>
             <Navbar/>
@@ -15,4 +15,4 @@ const NotFound:React.FC = () => {
     
 };
 
-export default NotFound
+export default NotFoundPage

@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const api = axios.create({
+const API = axios.create({
     baseURL: `https://nlp-brasil-api.herokuapp.com/`
 
 })
 
-export default api
+export default API

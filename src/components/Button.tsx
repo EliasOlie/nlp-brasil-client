@@ -1,4 +1,4 @@
-import ChadButtonStyle from './styles/ChadButtonStyle'
+import ChadButtonStyle from './styles/BtnStyle'
 
 interface IButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     type?: 'submit'|'button'|'reset';

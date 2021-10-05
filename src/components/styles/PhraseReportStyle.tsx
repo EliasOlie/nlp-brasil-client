@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ContentWrapper = styled.div`
+const PhraseReportStyle = styled.div`
     position: relative;
     display: flex;
     align-items: center;
@@ -8,4 +8,4 @@ const ContentWrapper = styled.div`
     flex-direction: column;
 `;
 
-export default ContentWrapper
+export default PhraseReportStyle

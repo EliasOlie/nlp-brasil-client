@@ -23,4 +23,4 @@ export default function ShowReport(props:IReport){
 	return(
 		<></>
 	)
-};
+}

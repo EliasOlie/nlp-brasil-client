@@ -1,11 +1,11 @@
 import { FC } from 'react'
 import IPage from '../../interfaces/IPage';
-import PhraseForm from '../phrase_form'
+import PhraseForm from '../MyForm'
 import HomePageStyle from '../styles/HomePageStyle';
 import Navbar from '../Navbar';
-import MainH1 from '../styles/MainH1'
+import MainH1 from '../styles/H1WithStyle'
 
-const Proc_Phrase:FC<IPage> = () => {
+const HomePage:FC<IPage> = () => {
     return(
         <HomePageStyle>
             <Navbar/>
@@ -16,4 +16,4 @@ const Proc_Phrase:FC<IPage> = () => {
     
 };
 
-export default Proc_Phrase
+export default HomePage

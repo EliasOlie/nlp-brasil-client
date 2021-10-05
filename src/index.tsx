@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Switch, RouteComponentProps} from 'react-router-dom';
 import routes from './routes/routes';
-import GlobalStyle from './components/styles/Global'
+import GlobalStyle from './components/styles/GlobalStyle'
 import NotFoundPage from './components/pages/NotFoundPage'
 
 ReactDOM.render(

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import COLORS from "./Colors";
 
-const NlStyle = styled.nav`
+const NavLinkStyle = styled.nav`
     display: flex;
     flex-direction: row;
     background-color: inherit;
@@ -28,4 +28,4 @@ const NlStyle = styled.nav`
     }
 `;
 
-export default NlStyle
+export default NavLinkStyle

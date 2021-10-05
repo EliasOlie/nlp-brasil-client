@@ -1,12 +1,12 @@
 import IPhrase from "../interfaces/IPhrase"
-import Drop from './Dropdown'
+import Drop from './DropdownItem'
 
 interface IShow {
     isHidden: boolean
     phrase: IPhrase | undefined
 }
 
-export default function Show(props:IShow){
+export default function ShowStatistics(props:IShow){
 	let isHidden = props.isHidden
 	const phrase = props.phrase
 	if (isHidden) {
@@ -30,4 +30,4 @@ export default function Show(props:IShow){
 	return(
 		<></>
 	)
-};
+}

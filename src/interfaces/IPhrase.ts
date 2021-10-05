@@ -5,5 +5,5 @@ export default interface IPhrase {
     PalavrasCon: number
     PalavrasDesc: number
     Mensagem: string
-    Frase: string
+    Frase?: string
 }
