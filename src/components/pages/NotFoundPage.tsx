@@ -1,7 +1,8 @@
+import IPage from "../../interfaces/IPage";
 import Navbar from "../Navbar";
 import NotFoundPageStyle from "../styles/NotFoundPageStyle";
 
-const NotFoundPage:React.FC = () => {
+const NotFoundPage:React.FC<IPage> = () => {
     return(
         <>
             <Navbar/>

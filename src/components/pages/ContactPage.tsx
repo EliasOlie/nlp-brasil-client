@@ -2,8 +2,9 @@ import GitHubButton from 'react-github-btn'
 import Navbar from "../Navbar";
 import Eu from '../media/orewa.jpg'
 import ContactPageStyle from '../styles/ContactPageStyle';
+import IPage from '../../interfaces/IPage';
 
-const ContactPage:React.FC = () => {
+const ContactPage:React.FC<IPage> = () => {
     return(
         <>
             <Navbar/>

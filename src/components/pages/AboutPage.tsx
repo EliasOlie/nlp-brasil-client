@@ -1,7 +1,8 @@
+import IPage from "../../interfaces/IPage";
 import Navbar from "../Navbar";
 import AboutPageStyle from "../styles/aboutPageStyle";
 
-const AboutPage:React.FC = () => {
+const AboutPage:React.FC<IPage> = () => {
     return(
         <>
             <Navbar/>

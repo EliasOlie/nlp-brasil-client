@@ -46,8 +46,8 @@ export default function MyForm() {
 					</ButtonHolderStyle>
 				</PhraseFormStyle>
 				<PhraseReportStyle>
-							<ShowPhrase isHidden={hidden} phrase={phrase?.Mensagem}/>
-							<ShowReport isHidden={hidden} phrase={phrase?.Frase}/>
+					<ShowPhrase isHidden={hidden} phrase={phrase?.Mensagem}/>
+					<ShowReport isHidden={hidden} phrase={phrase?.Frase}/>
 				</PhraseReportStyle>
 
 			</Wrapper>
