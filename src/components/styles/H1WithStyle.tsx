@@ -4,7 +4,7 @@ import COLORS from "./Colors";
 const H1Style = styled.h1`
     color: #${COLORS.YELLOW};
 
-    margin-top: 8rem;
+    margin-top: 7rem;
 
     display: flex;
     justify-content: center;

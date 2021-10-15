@@ -8,6 +8,7 @@ const DropdownStyle = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     p{
         background-color: white;
         width: 40em;

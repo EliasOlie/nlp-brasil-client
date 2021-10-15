@@ -33,7 +33,7 @@ const routes: IRoute[] = [
         exact: true,
         props: Object
 
-    },
+    }
     
 ];
 export default routes;

@@ -12,6 +12,8 @@ import ShowReport from './ShowReports'
 import Show from './ShowStatistics'
 import Wrapper from './styles/formWrapper'
 import ShowPhrase from './ShowPhrase'
+import "dotenv/config";
+
 
 export default function MyForm() {
 	const [phrase, setPhrase] = useState<IPhrase>()
@@ -33,7 +35,6 @@ export default function MyForm() {
 			<Wrapper>
 				<PhraseFormStyle ref={formRef} onSubmit={handleSubmit}>
 					<Input name="phrase" placeholder="Frase"/>
-					<ButtonHolderStyle>
 						<Button type="submit" onClick={() => {
 							if (hidden) {
 								setHidden(hidden)
@@ -41,8 +42,8 @@ export default function MyForm() {
 								setHidden(!hidden)
 							}
 						}}>Enviar!</Button>
+					<ButtonHolderStyle>
 						<Show isHidden={hidden} phrase={phrase}/>
-						
 					</ButtonHolderStyle>
 				</PhraseFormStyle>
 				<PhraseReportStyle>

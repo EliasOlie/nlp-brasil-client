@@ -2,51 +2,22 @@ import styled from "styled-components";
 import COLORS from "./Colors";
 
 const BtnWrapper = styled.div`
-    position: relative;
     display: flex;
-    flex-direction: row;
-
+    justify-content: center;
+    align-items: center;
+    
     .navbar-nav{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background-color: transparent;
+        flex-direction: column;
+        justify-content:center;
     }
-
-    button{
-        cursor: pointer;
-
-        margin-right: 1em;
-        width: 15vw;
-        height: 5vh;
-
-        border: none;
-        border-radius: 1rem;
-
-        box-shadow: 3px;
-
-        font-weight: 600;
-        font-size: 1vw;
-
-
-        color: #${COLORS.YELLOW};
-        background-color: #${COLORS.LIGHTGREEN};
-    }
-    
-
     .Detalhes{
         margin-top: 1em;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         color: #${COLORS.YELLOW};
         font-weight: 600;
-
         box-shadow: 3px;
-
+        justify-self: center;
         width: 15vw;
         height: 5vh;
         border-radius: 1rem;        

@@ -3,6 +3,7 @@ import IPhrase from "../interfaces/IPhrase";
 
 //Midia
 import ArrowDown from "./media/arrow-down.svg"
+import BtnWrapper from "./styles/BtnWrapper";
 import DropdownStyle from "./styles/DropdownStyle";
 
 function DropdownItem(props:any){
@@ -37,10 +38,12 @@ function NavItem(props:any){
 
     return(
         <>
-            <div className='Detalhes'>
+            <BtnWrapper className='Detalhes'>
                 Estatiscas para nerds
                 <a href="/#" className='icon-button' onClick={() => setOpen(!open)}><img src={props.icon} alt='Down Arrow'/></a>
-            </div>
+            
+            
+            </BtnWrapper>
             
             {open && props.children}
         </>
