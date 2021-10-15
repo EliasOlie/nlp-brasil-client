@@ -3,7 +3,7 @@ import "dotenv/config";
 
 
 const API = axios.create({
-    baseURL: process.env.LINK||'http://127.0.0.1:8000'
+    baseURL: 'https://nlp-brasil-api.herokuapp.com/'
 
 })
 
