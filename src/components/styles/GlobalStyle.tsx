@@ -11,8 +11,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
 
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: #${COLORS.DARKGREEN};
         color: black;
+    }
+    body{
+        background-color: #${COLORS.DARKGREEN};
     }
     h1{
         font-size: 5em;
