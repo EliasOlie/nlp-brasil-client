@@ -21,7 +21,7 @@ export default function MyForm() {
 	const formRef = useRef<FormHandles>(null)
 	const handleSubmit: SubmitHandler<IForm> = async data => {
 		await api.post(
-			'/phrase',
+			'/phrase/polarity',
 			data
 		).then((Response) => {
 		
