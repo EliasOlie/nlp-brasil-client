@@ -25,7 +25,7 @@ export default function MyForm() {
 			data
 		).then((Response) => {
 		
-			setPhrase(Response.data.data);
+			setPhrase(Response.data.process);
 		})
 	
 	}
